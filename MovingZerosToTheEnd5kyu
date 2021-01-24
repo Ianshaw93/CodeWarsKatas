@@ -1,0 +1,11 @@
+def move_zeros(array):
+    for i in array:
+      if i is False:
+          new.append(False) #add items equal to false to new
+      elif i ==0:
+          zeros.append(0)
+      else:
+          new.append(i) #add items that are not False or zero to new
+
+    new.extend(zeros) #add zeros to end of new
+    return(new)
