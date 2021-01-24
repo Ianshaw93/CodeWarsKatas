@@ -1,0 +1,8 @@
+def array_diff(a, b):
+    output =[]
+   
+    for i in a:
+        if i in b: pass 
+        else: output.append(i)    
+       
+    return output
