@@ -1,0 +1,6 @@
+def create_phone_number(n):
+    string_output1 = [str(item) for item in n] #convert list to string
+    a_string = "".join(string_output1) #convert string to not have commas etc - just one long number
+    
+    phone_number = "(" + a_string[:3] + ") " + a_string[3:6] + "-" + a_string[6:] #piece together slices
+    return phone_number
