@@ -1,0 +1,10 @@
+def dig_pow(n, p):
+    case = 0
+    counter = 0
+    
+    for i in str(n):  # convert integer to string & select each digit in turn as i for loop
+        case = case + int(i) ** (p + counter) #int(i) equavalent to the specific digit in n in integer form.
+        counter = counter + 1 #adding one to counter to increase power by one each iteration of loop
+    if case % n == 0: 
+        return (int(case/n)) #return k i.e. case/n if case is a multiple of n
+    else: return(-1)
